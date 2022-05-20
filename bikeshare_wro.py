@@ -6,7 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-# Set up month selection options
+# Set up month selection options - note that data is only available January through June 2017
 MONTH_DATA = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 
 # Set up day of the week selection options
@@ -141,7 +141,7 @@ def trip_duration_stats(df):
     tot_travel_time = (df['Trip Duration'].sum())/(24*60*60)
     print(f'The total travel time for selections is:\t {tot_travel_time} days')
 
-    # TO DO: display mean travel time
+    # TO DO: display mean travel time is in Minutes
     avg_travel_time = (df['Trip Duration'].mean())/60
     print(f'The mean travel time for selections is:\t {avg_travel_time} minutes')
 
