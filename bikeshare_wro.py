@@ -137,7 +137,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # TO DO: display total travel time
+    # TO DO: display total travel time in days
     tot_travel_time = (df['Trip Duration'].sum())/(24*60*60)
     print(f'The total travel time for selections is:\t {tot_travel_time} days')
 
@@ -162,6 +162,7 @@ def user_stats(df, city):
 
     # TO DO: Display counts of gender
     # Set up logic to find gender and birth info in chicago and new york city files.
+    # Gender and birth data no available for Washington
     if city != 'washington':
         gender_type = df['Gender'].value_counts()
         print(f'The gender count for selections is:\n {gender_type}')
