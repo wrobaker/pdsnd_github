@@ -137,7 +137,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # TO DO: display total travel time in days
+    # TO DO: display total travel time in Days
     tot_travel_time = (df['Trip Duration'].sum())/(24*60*60)
     print(f'The total travel time for selections is:\t {tot_travel_time} days')
 
